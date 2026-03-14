@@ -36,11 +36,12 @@ This repository contains the analysis for the Primetrade.ai Data Science Intern 
    - Segmented traders by activity (Frequent vs Infrequent) and trade size (Small vs Large) using quantiles to understand how different styles perform under distinct market psychologies.
 
 ## Insights Discovered
-*Note: A complete output with exact figures is printed into the console upon running the script, and charts are generated in the `/charts` directory.*
+*Note: A complete output with exact figures is printed into the notebook, and charts are generated in the `/charts` directory.*
 
 1. **Win Rates vs Sentiment**: The analysis generally shows win rates differ between Fear and Greed regimes, signifying that when market emotion changes, existing strategies' edge often shifts.
 2. **Activity Correlation**: Some trader segments (such as the most frequent traders) may exhibit heightened activity and larger trade sizes during "Greed", which occasionally corresponds to diminished PnL if they are caught in reversals.
-3. **Segment Differences**: High-frequency traders often behave differently compared to lower-frequency, structural traders during "Extreme Fear" days, heavily influencing their variance in daily PnL.
+3. **Volume Segments**: High-frequency traders often behave differently compared to lower-frequency, structural traders during "Extreme Fear" days, heavily influencing their variance in daily PnL.
+4. **Consistency Segments (Consistent vs Inconsistent Winners)**: Grouping accounts by their overall historical win rate uncovers that "Consistent Winners" adapt better to emotional swings. Inconsistent traders frequently suffer amplified drawdowns on "Extreme Greed" or "Extreme Fear" days due to emotional over-trading, while consistent winners manage their PnL more steadily despite sentiment shifts.
 
 ## Strategy Recommendations (Part C)
 Based on the observations:
